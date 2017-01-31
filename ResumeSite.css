@@ -36,21 +36,23 @@ body {
   color: white;
 }
 
-.nav li {
-  display: inline-block;
-  float: left;
-  padding: 5px;
-  margin: 5px;
-  text-align: center;
-  background-color:rgba(32, 186, 70, 0.63);
-  width:20%;
-  border-style: groove;
-  border-radius: 10px;
-}
+  .nav li {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    background-color:rgba(32, 186, 70, 0.63);
+    width:20%;
+    border-style: groove;
+    border-radius: 10px;
+    position: relative;
+  }
 
-.nav {
-  margin-left: auto;
-  margin-right: auto;
+.facepic {
+  float: left;
+  height: 140px;
+  width: 80px;
+  border-radius: 10px;
 }
 
 .main {
@@ -61,4 +63,94 @@ body {
   margin: 20px;
   margin-top: 65px;
   border-style: groove;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.main ul {
+  padding-left: 120px;
+}
+.main a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.grid {
+  border-style: none;
+  text-decoration: none;
+  margin: 25px 50px 25px 50px;
+  }
+
+  .project {
+    position: relative;
+    display: inline-block;
+    border-style: groove;
+    border-radius: 5px;
+    float: left;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 5px 5px 5px rgb(107, 171, 125);
+    background-color: rgba(#72ad76, 0.77);
+    text-align: center;
+  }
+
+
+a h5, p {
+  position: static;
+  text-align: center;
+  font-size: 12px;
+  color: rgb(44, 46, 48);
+}
+
+a img {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  padding: 5px;
+}
+
+.grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project:hover {
+  background-color: white;
+}
+
+@media (max-width:600px){
+  .nav li {
+    width: 75%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .project {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width:600px) {
+  .nav li {
+    width: 35%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .project {
+    width: 40%;
+  }
+}
+
+@media (min-width:900px) {
+  .nav li {
+    width: 20%;
+    margin: 5px;
+  }
+  .project {
+    width: 30%;
+  }
 }
